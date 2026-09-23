@@ -1,6 +1,6 @@
 # Virtual Barista
 
-Chatbot for cafe (Gradio) that works with Ollama or Anthropic model and receives orders via tool.
+Small AI agent that sells coffee: a virtual barista chatbot that recommends drinks from the menu and places orders through tool calling. Runs on a local Ollama model or on Claude via the Anthropic API, switchable in the Gradio UI.
 
 ## Structure
 
