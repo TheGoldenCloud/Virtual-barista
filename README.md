@@ -33,16 +33,3 @@ pip install -r requirements.txt
 cp .env.example .env # then enter your ANTHROPIC_API_KEY
 python app.py
 ```
-
-## Adding a new tool
-
-1. Write the function in `tools.py`.
-2. Add its description (spec) to `TOOL_SPECS'.
-3. Add `"name": function` to `AVAILABLE_TOOLS`.
-
-The conversion for Ollam and Anthropic is done automatically.
-
-## Adding a new provider
-
-Create `providers/<name>_provider.py` with function `chat(message, history)`,
-register it in `providers/__init__.py` and add the name to `PROVIDERS` in `config.py`.
